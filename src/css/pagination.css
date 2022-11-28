@@ -1,0 +1,33 @@
+.pagination-container {
+  margin: 20px 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 16px;
+  text-align: center;
+  justify-content: center;
+}
+
+.pagination-container a {
+  text-decoration: none;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  line-height: calc(40 / 16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #404040;
+  text-align: center;
+  color: #000;
+  position: relative;
+}
+
+.pagination-container a.active {
+  background-color: #00cccc;
+  color: #fff;
+}
+
+.pagination-container a.disable {
+  display: none;
+}
