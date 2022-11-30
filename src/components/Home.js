@@ -99,7 +99,7 @@ const Home = (props) => {
           textDecoration: "none",
         }}
       >
-        Table 1
+        A
       </Link>
       <Link
         to="/Home1"
@@ -111,7 +111,7 @@ const Home = (props) => {
           textDecoration: "none",
         }}
       >
-        Table 2
+        B
       </Link>
       <form style={{ margin: "12px 4px", marginLeft: "20px" }}>
         <label for="records"> </label>
