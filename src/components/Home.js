@@ -99,7 +99,7 @@ const Home = (props) => {
           textDecoration: "none",
         }}
       >
-        A
+        Animal
       </Link>
       <Link
         to="/Home1"
@@ -111,7 +111,7 @@ const Home = (props) => {
           textDecoration: "none",
         }}
       >
-        B
+        Post
       </Link>
       <form style={{ margin: "12px 4px", marginLeft: "20px" }}>
         <label for="records"> </label>
