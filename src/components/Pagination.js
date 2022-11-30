@@ -77,6 +77,13 @@ const Pagination = (props) => {
     return false;
   }, [currentPage, numberOfPages]);
 
+  const Linkto = (item) => {
+    console.log(typeof item);
+    if (typeof item === "number") {
+      return `${props.path}/?pageNow=${item}&pageSize=${props.itemsPerpage}`;
+    }
+  };
+
   return (
     <>
       <div className="pagination-container">
@@ -108,7 +115,7 @@ const Pagination = (props) => {
         {arrOfCurrButtons.map((item, index) => {
           return (
             <Link
-              to={`${props.path}/?pageNow=${item}&pageSize=${props.itemsPerpage}`}
+              to={Linkto(item)}
               className={`${currentPage === item ? "active" : ""}`}
               key={index}
               // onClick={() => {
